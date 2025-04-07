@@ -6,7 +6,7 @@
   <title>Movely</title>
   <link href="./css/output.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 </head>
 <body class="bg-[#161d25]">
 
@@ -27,9 +27,9 @@
         <li><a href="">ALOQA</a></li>
       </ul>
       <!-- search input -->
-      <div class="flex border-b border-t-transparent border-[#d1d0d03f] px-2 rounded-sm items-center h-7">
-        <div>
-          <input type="search" placeholder="Film qidiring..." class="w-40 placeholder:text-gray-300" />
+      <div class="flex px-2 items-center gap-1 h-7">
+        <div class="border-b border-t-transparent rounded-sm px-2 py-0.5 border-[#ffffff]">
+          <input type="search" placeholder="Film qidiring..." class="w-36 placeholder:text-gray-300 focus:outline-none text-white" />
         </div>
         <div>
           <i class="fa-solid fa-magnifying-glass text-white text-shadow-[0px_0px_10px_white]"></i>
@@ -46,10 +46,10 @@
       <button id="prev-btn" class="absolute text-3xl hover:text-shadow-[0px_0px_10px_white] left-9 top-1/2 -translate-y-1/2 cursor-pointer z-10">
         ❮
       </button>
-      <button id="next-btn" class="absolute text-3xl hover:text-shadow-[0px_0px_10px_white] right-9 top-1/2 -translate-y-1/2 cursor-pointer z-10">
-        ❯
+      <button id="next-btn" class="absolute text-3xl hover:text-shadow-[0px_0px_10px_white] right-9 top-1/2 -translate-y-1/2 cursor-pointer z-10"> ❯
       </button>
     </div>
+    
     <!-- Slider contain -->
     <div id="slider-container" class="w-full h-full flex transition-transform duration-500">
       <img src="img/kong-vs-godzilla.webP" class="w-full h-full object-cover flex-shrink-0" alt="Clone Last" />
@@ -77,15 +77,15 @@
         </h1>
         <!-- Neetwork -->
         <div class="text-white gap-7 flex text-3xl">
-          <a href=""><i class="fa-brands fa-telegram"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-solid fa-circle-info"></i></a>
+          <a href="" class="tooltip" data-tip="Telegram kanal"><i class="fa-brands fa-telegram"></i></a>
+          <a href="" class="tooltip" data-tip="Youtube kanal"><i class="fa-brands fa-youtube"></i></a>
+          <a href="" class="tooltip" data-tip="Instagram sahifasi"><i class="fa-brands fa-instagram"></i></a>
+          <a href="" class="tooltip" data-tip="Sayt qoidalari!"><i class="fa-solid fa-circle-exclamation"></i></a>
         </div>
       </div>
 
       <!-- == SLIDER-1 == -->
-      <div class="relative flex items-center max-w-4xl w-full mt-5">
+      <div class="relative flex items-center max-w-4xl overflow-hidden w-full mt-5">
         <!-- Buttons -->
         <button id="prev" class="absolute left-1 text-shadow-[0px_0px_10px_white] top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
           ❮
@@ -412,7 +412,6 @@
       </div>
 
     </div>
-    </div>
 
     <!-- == RATING == -->
     <div class="ml-5 w-full rounded-sm bg-[#222933] border border-[#d1d0d010] join join-vertical">
@@ -636,10 +635,10 @@
     </nav>
 
     <nav>
-      <div class="text-white gap-7 flex text-3xl">
-        <a href=""><i class="fa-brands fa-telegram"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <div class="text-white gap-6 flex text-3xl">
+        <a href=""><i class="fa-brands fa-telegram border border-[#d1d0d010] rounded-sm p-2"></i></a>
+        <a href=""><i class="fa-brands fa-youtube border border-[#d1d0d010] rounded-sm py-2 px-1"></i></a>
+        <a href=""><i class="fa-brands fa-instagram border border-[#d1d0d010] rounded-sm p-2"></i></a>
       </div>
     </nav>
 
