@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movely</title>
   <link href="./css/output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#161d25]">
 
@@ -17,7 +16,7 @@
     <div class="fixed top-2 m-auto max-w-2xl w-full backdrop-blur-lg rounded-sm justify-between p-2 pl-6 border border-[#d1d0d03f] gap-6 flex items-center z-50">
       <!-- theme button -->
       <button>
-        <i class="fa-solid fa-moon text-white"></i>
+        <i class="fa-solid fa-moon text-white text-shadow-[0px_0px_10px_white]"></i>
         <!-- <i class="fa-regular fa-sun text-white"></i> -->
       </button>
 
@@ -28,12 +27,12 @@
         <li><a href="">ALOQA</a></li>
       </ul>
       <!-- search input -->
-      <div class="flex border border-[#d1d0d03f] px-2 rounded-sm items-center h-7">
+      <div class="flex border-b border-t-transparent border-[#d1d0d03f] px-2 rounded-sm items-center h-7">
         <div>
           <input type="search" placeholder="Film qidiring..." class="w-40 placeholder:text-gray-300" />
         </div>
         <div>
-          <i class="fa-solid fa-magnifying-glass text-white"></i>
+          <i class="fa-solid fa-magnifying-glass text-white text-shadow-[0px_0px_10px_white]"></i>
         </div>
       </div>
     </div>
@@ -44,10 +43,10 @@
     <!-- Buttons -->
     <div class="absolute inset-0 flex justify-between items-center text-white text-2xl">
 
-      <button id="prev-btn" class="absolute left-9 top-1/2 -translate-y-1/2 cursor-pointer z-10">
+      <button id="prev-btn" class="absolute text-3xl hover:text-shadow-[0px_0px_10px_white] left-9 top-1/2 -translate-y-1/2 cursor-pointer z-10">
         ❮
       </button>
-      <button id="next-btn" class="absolute right-9 top-1/2 -translate-y-1/2 cursor-pointer z-10">
+      <button id="next-btn" class="absolute text-3xl hover:text-shadow-[0px_0px_10px_white] right-9 top-1/2 -translate-y-1/2 cursor-pointer z-10">
         ❯
       </button>
     </div>
@@ -73,14 +72,14 @@
 
       <!-- == TITLE == -->
       <div class="flex justify-between border border-[#d1d0d010] items-center py-2 px-3 w-full rounded-sm bg-[#222933]">
-        <h1 class="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r via-transparent animate-background">
+        <h1 class="text-3xl font-medium text-white">
           TAVSIYA ETILGAN
         </h1>
         <!-- Neetwork -->
-        <div class="text-transparent bg-clip-text bg-gradient-to-r via-transparent to-transparent animate-background gap-7 flex text-3xl">
+        <div class="text-white gap-7 flex text-3xl">
+          <a href=""><i class="fa-brands fa-telegram"></i></a>
           <a href=""><i class="fa-brands fa-youtube"></i></a>
           <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-telegram"></i></a>
           <a href=""><i class="fa-solid fa-circle-info"></i></a>
         </div>
       </div>
@@ -88,10 +87,10 @@
       <!-- == SLIDER-1 == -->
       <div class="relative flex items-center max-w-4xl w-full mt-5">
         <!-- Buttons -->
-        <button id="prev" class="absolute left-1 top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
+        <button id="prev" class="absolute left-1 text-shadow-[0px_0px_10px_white] top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
           ❮
         </button>
-        <button id="next" class="absolute right-1 top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
+        <button id="next" class="absolute right-1 text-shadow-[0px_0px_10px_white] top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
           ❯
         </button>
 
@@ -197,12 +196,13 @@
       </div>
 
       <!-- == SLIDER-2 == -->
-      <div class="relative flex items-center max-w-4xl w-full mt-5">
+       <p class="text-white p-3 text-">SERIALLAR</p>
+      <div class="relative flex items-center max-w-4xl w-full">
         <!-- Buttons -->
-        <button id="prev" class="absolute left-1 top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
+        <button id="prev" class="absolute text-shadow-[0px_0px_10px_white] left-1 top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
           ❮
         </button>
-        <button id="next" class="absolute right-1 top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
+        <button id="next" class="absolute text-shadow-[0px_0px_10px_white] right-1 top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
           ❯
         </button>
 
@@ -306,13 +306,119 @@
         </div>
 
       </div>
+
+      <!-- == SLIDER-3 == -->
+      <p class="text-white p-3 text-">MULTFILMLAR</p>
+      <div class="relative flex items-center max-w-4xl w-full">
+        <!-- Buttons -->
+        <button id="prev" class="absolute text-shadow-[0px_0px_10px_white] left-1 top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
+          ❮
+        </button>
+        <button id="next" class="absolute text-shadow-[0px_0px_10px_white] right-1 top-1/2 border border-[#d1d0d010] -translate-y-1/2 backdrop-blur-sm p-2 rounded-sm text-white text-2xl z-10">
+          ❯
+        </button>
+
+        <!-- Slider -->
+        <div id="slider" class="flex max-w-4xl w-full overflow-hidden gap-6">
+          <!-- Film card -->
+          <div class="w-[324px] shrink-0 border-4 border-[#222933] rounded-sm">
+            <div class="h-48">
+              <img src="img/kung-fu-panda-4.jpg" class="w-full h-full object-cover" />
+            </div>
+            <!-- Film desc -->
+            <div class="bg-[#222933] text-center text-white p-2.5 flex gap-1.5 justify-center">
+              <h5 class="text-lg">Garri Potter 8</h5><p class="text-lg opacity-75">film 2010</p>
+            </div>
+          </div>
+
+          <!-- Film card -->
+          <div class="w-[324px] shrink-0 border-4 border-[#222933] rounded-sm">
+            <div class="h-48">
+              <img src="img/moana-2.jpg" class="w-full h-full object-cover" />
+            </div>
+            <!-- Film desc -->
+            <div class="bg-[#222933] text-center text-white p-2.5 flex gap-1.5 justify-center">
+              <h5 class="text-lg">Garri Potter 8</h5><p class="text-lg opacity-75">film 2010</p>
+            </div>
+          </div>
+
+          <!-- Film card -->
+          <div class="w-[324px] shrink-0 border-4 border-[#222933] rounded-sm">
+            <div class="h-48">
+              <img src="img/piter-2.webP" class="w-full h-full object-cover" />
+            </div>
+            <!-- Film desc -->
+            <div class="bg-[#222933] text-center text-white p-2.5 flex gap-1.5 justify-center">
+              <h5 class="text-lg">Garri Potter 8</h5><p class="text-lg opacity-75">film 2010</p>
+            </div>
+          </div>
+
+          <!-- Film card -->
+          <div class="w-[324px] shrink-0 border-4 border-[#222933] rounded-sm">
+            <div class="h-48">
+              <img src="img/wednesday.webp" class="w-full h-full object-cover" />
+            </div>
+            <!-- Film desc -->
+            <div class="bg-[#222933] text-center text-white p-2.5 flex gap-1.5 justify-center">
+              <h5 class="text-lg">Garri Potter 8</h5><p class="text-lg opacity-75">film 2010</p>
+            </div>
+          </div>
+
+          <!-- Film card -->
+          <div class="w-[324px] shrink-0 border-4 border-[#222933] rounded-sm">
+            <div class="h-48">
+              <img src="img/wednesday.webp" class="w-full h-full object-cover" />
+            </div>
+            <!-- Film desc -->
+            <div class="bg-[#222933] text-center text-white p-2.5 flex gap-1.5 justify-center">
+              <h5 class="text-lg">Garri Potter 8</h5><p class="text-lg opacity-75">film 2010</p>
+            </div>
+          </div>
+
+          <!-- Film card -->
+          <div class="w-[324px] shrink-0 border-4 border-[#222933] rounded-sm">
+            <div class="h-48">
+              <img src="img/wednesday.webp" class="w-full h-full object-cover" />
+            </div>
+            <!-- Film desc -->
+            <div class="bg-[#222933] text-center text-white p-2.5 flex gap-1.5 justify-center">
+              <h5 class="text-lg">Garri Potter 8</h5><p class="text-lg opacity-75">film 2010</p>
+            </div>
+          </div>
+
+          <!-- Film card -->
+          <div class="w-[324px] shrink-0 border-4 border-[#222933] rounded-sm">
+            <div class="h-48">
+              <img src="img/wednesday.webp" class="w-full h-full object-cover" />
+            </div>
+            <!-- Film desc -->
+            <div class="bg-[#222933] text-center text-white p-2.5 flex gap-1.5 justify-center">
+              <h5 class="text-lg">Garri Potter 8</h5><p class="text-lg opacity-75">film 2010</p>
+            </div>
+          </div>
+
+          <!-- Film card -->
+          <div class="w-[324px] shrink-0 border-4 border-[#222933] rounded-sm">
+            <div class="h-48">
+              <img src="img/wednesday.webp" class="w-full h-full object-cover" />
+            </div>
+            <!-- Film desc -->
+            <div class="bg-[#222933] text-center text-white p-2.5 flex gap-1.5 justify-center">
+              <h5 class="text-lg">Garri Potter 8</h5><p class="text-lg opacity-75">film 2010</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
     </div>
 
     <!-- == RATING == -->
     <div class="ml-5 w-full rounded-sm bg-[#222933] border border-[#d1d0d010] join join-vertical">
 
       <!-- Title -->
-      <h1 class="text-3xl text-center font-medium text-transparent bg-clip-text bg-gradient-to-r py-2 border border-b-[#d1d0d010] via-transparent to-transparent animate-background">REYTINGDA</h1>
+      <h1 class="text-3xl text-center font-medium text-white py-2 border-b border-[#d1d0d010]">REYTINGDA</h1>
 
         <!-- accordion films -->
         <div class="collapse collapse-arrow join-item  text-white">
@@ -499,28 +605,65 @@
             </div>
           </div>
         </div>
+
+        <!-- random film -->
+        <div class="mx-auto">
+          <h1 class="text-3xl text-center font-medium my-2 text-white">
+            TASODIFIY
+          </h1>
+          <!-- Film card -->
+          <div class="w-52 shrink-0 border-4 border-[#161d25] rounded-sm">
+            <div class="h-[280px]">
+              <img src="img/asalarichi.jpg" class="w-full h-full object-cover" />
+            </div>
+            <!-- Film desc -->
+            <div class="bg-[#161d25] text-center text-white">
+              <h5 class="text-lg">Garri Potter 8</h5>
+              <span class="opacity-75">Film 2010</span>
+            </div>
+          </div>
+        </div>
     </div>
   </main>
 
+  <!-- == FOOTER == -->
+  <footer class="footer footer-horizontal border-[#d1d0d010] border footer-center bg-[#222933] mt-10 text-base-content rounded p-10">
+    <nav class="grid grid-flow-col gap-4 text-white">
+      <a class="link link-hover">DMCA</a>
+      <a class="link link-hover">QOIDALAR</a>
+      <a class="link link-hover">BOG'LANISH</a>
+      <a class="link link-hover">REKLAMA</a>
+    </nav>
+
+    <nav>
+      <div class="text-white gap-7 flex text-3xl">
+        <a href=""><i class="fa-brands fa-telegram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </nav>
+
+    <aside>
+      <p class="text-white">Copyright © 2025 - movely.com Barcha huquqlar himoyalangan.</p>
+    </aside>
+  </footer>
+
   <!-- Text Animate -->
   <style>
-    .animate-background {
-      background-image: url(img/text.avif);
-      color: white;
-      background-size: 600%;
-      background-position: 0 50%;
-      animation: animate-background 13s infinite alternate ease-in-out;
-
-      @keyframes animate-background {
+  @layer utilities {
+    @keyframes animated-bg {
       0% {
-        background-position: 0 90%;
+        background-position: 0% 50%;
       }
-
       100% {
-        background-position: 90% 0%;
+        background-position: 100% 50%;
       }
     }
+
+    .animate-animated-bg {
+      animation: animated-bg 5s infinite alternate linear;
     }
+  }
   </style>
 
   <script src="java/script.js"></script>
