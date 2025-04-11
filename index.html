@@ -13,12 +13,27 @@
   <!-- == MENU NAV == -->
   <div class="m-auto max-w-2xl relative">
 
-    <div class="fixed top-2 m-auto max-w-2xl w-full backdrop-blur-lg rounded-sm justify-between p-2 pl-6 border border-[#d1d0d03f] gap-6 flex items-center z-50">
+    <div class="fixed top-2 m-auto max-w-2xl w-full backdrop-blur-lg rounded-sm justify-between p-2 px-5 border-b border-x border-[#d1d0d03f] gap-6 flex items-center z-50">
       <!-- theme button -->
-      <button>
-        <i class="fa-solid fa-moon text-white text-shadow-[0px_0px_10px_white]"></i>
-        <!-- <i class="fa-regular fa-sun text-white"></i> -->
-      </button>
+      <label class="swap swap-rotate">
+        <input type="checkbox" />
+        <!-- sun icon -->
+        <svg
+          class="swap-on h-6 w-6 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24">
+          <path
+            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+        </svg>   
+        <!-- moon icon -->
+        <svg
+          class="swap-off h-6 w-6 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24">
+          <path
+            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+        </svg>
+      </label>
 
       <!-- href -->
       <ul class="flex justify-between w-full text-amber-50 py-1 tracking-wide">
@@ -29,12 +44,12 @@
       </ul>
 
       <!-- search input -->
-      <div class="flex px-2 items-center gap-1 h-7">
+      <div class="flex pl-2 items-center gap-1 h-7">
         <div class="border-b border-t-transparent rounded-sm px-2 py-0.5 border-[#ffffff]">
-          <input type="search" placeholder="Film qidiring..." class="w-36 placeholder:text-gray-300 focus:outline-none text-white" />
+          <input type="search" placeholder="Film qidiring..." class="w-36 focus:outline-none text-white" />
         </div>
         <div>
-          <i class="fa-solid fa-magnifying-glass text-white text-shadow-[0px_0px_10px_white]"></i>
+          <i class="fa-solid fa-magnifying-glass text-white"></i>
         </div>
       </div>
     </div>
@@ -73,7 +88,8 @@
   <main class="max-w-6xl justify-between w-full m-auto my-5 flex">
     <div class="gap-y-5"><!--(for flex with rating)-->
 
-      <div class="flex justify-between border border-[#d1d0d010] items-center py-2 px-3 w-full rounded-sm">
+      <!-- == TITLE == -->
+      <div class="flex justify-between border border-[#d1d0d010] bg-[#222933] items-center py-2 px-3 w-full rounded-sm">
         <h1 class="text-3xl font-medium masked-text">
           TAVSIYA ETILGAN
         </h1>
@@ -627,30 +643,55 @@
     </div>
   </main>
 
-  <!-- == FOOTER == -->
-  <footer class="footer footer-horizontal border-[#d1d0d010] border footer-center bg-[#222933] mt-10 text-base-content rounded p-10">
-    <nav class="grid grid-flow-col gap-4 text-white">
-      <a class="link link-hover">DMCA</a>
-      <a class="link link-hover">QOIDALAR</a>
-      <a class="link link-hover">BOG'LANISH</a>
-      <a class="link link-hover">REKLAMA</a>
-    </nav>
-
-    <nav>
-      <div class="text-white gap-6 flex text-3xl">
-        <a href=""><i class="fa-brands fa-telegram  border border-[#d1d0d010] rounded-sm p-2 masked-text"></i></a>
-        <a href=""><i class="fa-brands fa-youtube border border-[#d1d0d010] rounded-sm py-2 px-1 masked-text"></i></a>
-        <a href=""><i class="fa-brands fa-instagram border border-[#d1d0d010] rounded-sm p-2 masked-text"></i></a>
+  <div class="max-w-6xl m-auto flex gap-5">
+    <div class="border border-[#d1d0d010] bg-[#222933] py-4 px-5 rounded-sm">
+      <p>
+        "MOVELY" da filmlarni sifatli bepul hamda hech qanday cheklovlarsiz tomosha qiling!
+      </p>
+    </div>
+    <div class="border border-[#d1d0d010] bg-[#222933] py-2 px-3 gap-3 items-center flex rounded-sm w-fit">
+      <p class=" font-medium masked-text">
+        FILM BUYURTMA QILISH
+      </p>
+      <div class="join">
+        <input class="input join-item tracking-wide border-[#d1d0d010] border" placeholder="Yozib qoldiring.." />
+        <button class="btn join-item rounded-r-sm">Yuborish</button>
       </div>
-    </nav>
+    </div>
+  </div>
 
+  <!-- == FOOTER == -->
+  <footer class="border-[#d1d0d010] border bg-[#222933] mt-10">
+    <div class="footer sm:footer-horizontal py-10 max-w-6xl mx-auto justify-between border-b border-[#d1d0d02f]">
+      <div class="text-5xl">
+        LOGOTIP.COM
+      </div>
+      <nav class="tracking-wide">
+        <h6 class="footer-title text-lg">HAQIDA</h6>
+        <a class="link link-hover text-[16px]">DMCA</a>
+        <a class="link link-hover text-[16px]">Reklama</a>
+        <a class="link link-hover text-[16px]">Qoidalar</a>
+        <a class="link link-hover text-[16px]">Bog'lanish</a>
+      </nav>
+      <nav class="tracking-wide">
+        <h6 class="footer-title text-lg">KATALOG</h6>
+        <a class="link link-hover text-[16px]">Asosiy</a>
+        <a class="link link-hover text-[16px]">Filmlar</a>
+        <a class="link link-hover text-[16px]">Seriallar</a>
+        <a class="link link-hover text-[16px]">Multfilm</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4 text-3xl py-2">
+          <a href=""><i class="fa-brands fa-telegram rounded-sm p-2 masked-text"></i></a>
+          <a href=""><i class="fa-brands fa-youtube border rounded-sm py-2 px-1 masked-text"></i></a>
+          <a href=""><i class="fa-brands fa-instagram border rounded-sm p-2 masked-text"></i></a>
+        </div>
+      </nav>
+    </div>
     <aside>
-      <p class="text-white">Copyright © 2025 - movely.com Barcha huquqlar himoyalangan.</p>
+        <p class="text-white text-center my-2 opacity-75 ">Copyright © 2025 - movely.com Barcha huquqlar himoyalangan.</p>
     </aside>
   </footer>
-
-  <!-- Text Animate -->
-  
 
   <script src="java/script.js"></script>
 </body>
