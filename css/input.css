@@ -1,2 +1,22 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@keyframes animate-background {
+    0% {
+      background-position: 0 100%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  .masked-text {
+    color: transparent; /* Matnni shaffof qilish */
+    background-image: url(../img/text.avif);
+    background-size: 650%; /* Kattalashtirilgan rasm */
+    background-position: 0 20%; /* Boshlang'ich pozitsiya */
+    background-clip: text; /* Matnni rasm bilan yashirish */
+    -webkit-background-clip: text; /* Safari uchun qo'shimcha */
+    -webkit-text-fill-color: transparent; /* Matnni rangsiz qilish */
+    animation: animate-background 14s infinite alternate ease-in-out; /* Animatsiyani qo'llash */
+  }
+  

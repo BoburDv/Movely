@@ -73,20 +73,19 @@
   <main class="max-w-6xl justify-between w-full m-auto my-5 flex">
     <div class="gap-y-5"><!--(for flex with rating)-->
 
-      <!-- == TITLE == -->
-      <div class="flex justify-between border border-[#d1d0d010] items-center py-2 px-3 w-full rounded-sm bg-[#222933]">
-        <h1 class="text-3xl font-medium text-white">
+      <div class="flex justify-between border border-[#d1d0d010] items-center py-2 px-3 w-full rounded-sm">
+        <h1 class="text-3xl font-medium masked-text">
           TAVSIYA ETILGAN
         </h1>
         <!-- Neetwork -->
-        <div class="text-white gap-7 flex text-3xl">
-          <a href="" class="tooltip" data-tip="Telegram kanal"><i class="fa-brands fa-telegram"></i></a>
-          <a href="" class="tooltip" data-tip="Youtube kanal"><i class="fa-brands fa-youtube"></i></a>
-          <a href="" class="tooltip" data-tip="Instagram sahifasi"><i class="fa-brands fa-instagram"></i></a>
-          <a href="" class="tooltip" data-tip="Sayt qoidalari!"><i class="fa-solid fa-circle-exclamation"></i></a>
+        <div class="gap-7 flex text-3xl">
+          <a href="" class="masked-text" title="Telegram kanal"><i class="fa-brands fa-telegram"></i></a>
+          <a href="" class="masked-text" title="Youtube kanal"><i class="fa-brands fa-youtube"></i></a>
+          <a href="" class="masked-text" title="Instagram sahifasi"><i class="fa-brands fa-instagram"></i></a>
+          <a href="" class="masked-text" title="Sayt qoidalari"><i class="fa-solid fa-circle-exclamation"></i></a>
         </div>
       </div>
-
+      
       <!-- == SLIDER-1 == -->
       <div class="relative flex items-center max-w-4xl overflow-hidden w-full mt-5">
         <!-- Buttons -->
@@ -420,7 +419,7 @@
     <div class="ml-5 w-full rounded-sm bg-[#222933] border border-[#d1d0d010] join join-vertical">
 
       <!-- Title -->
-      <h1 class="text-3xl text-center font-medium text-white py-2 border-b border-[#d1d0d010]">REYTINGDA</h1>
+      <h1 class="text-3xl text-center font-medium py-2 border-b border-[#d1d0d010] masked-text">REYTINGDA</h1>
 
         <!-- accordion films -->
         <div class="collapse collapse-arrow join-item  text-white">
@@ -610,7 +609,7 @@
 
         <!-- random film -->
         <div class="mx-auto">
-          <h1 class="text-3xl text-center font-medium my-2 text-white">
+          <h1 class="text-3xl text-center font-medium my-2 masked-text">
             TASODIFIY
           </h1>
           <!-- Film card -->
@@ -639,9 +638,9 @@
 
     <nav>
       <div class="text-white gap-6 flex text-3xl">
-        <a href=""><i class="fa-brands fa-telegram border border-[#d1d0d010] rounded-sm p-2"></i></a>
-        <a href=""><i class="fa-brands fa-youtube border border-[#d1d0d010] rounded-sm py-2 px-1"></i></a>
-        <a href=""><i class="fa-brands fa-instagram border border-[#d1d0d010] rounded-sm p-2"></i></a>
+        <a href=""><i class="fa-brands fa-telegram  border border-[#d1d0d010] rounded-sm p-2 masked-text"></i></a>
+        <a href=""><i class="fa-brands fa-youtube border border-[#d1d0d010] rounded-sm py-2 px-1 masked-text"></i></a>
+        <a href=""><i class="fa-brands fa-instagram border border-[#d1d0d010] rounded-sm p-2 masked-text"></i></a>
       </div>
     </nav>
 
@@ -651,22 +650,7 @@
   </footer>
 
   <!-- Text Animate -->
-  <style>
-  @layer utilities {
-    @keyframes animated-bg {
-      0% {
-        background-position: 0% 50%;
-      }
-      100% {
-        background-position: 100% 50%;
-      }
-    }
-
-    .animate-animated-bg {
-      animation: animated-bg 5s infinite alternate linear;
-    }
-  }
-  </style>
+  
 
   <script src="java/script.js"></script>
 </body>
